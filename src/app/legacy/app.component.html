@@ -1,0 +1,27 @@
+
+<!-- Asi empezo la seccion probando cosas luego lo borro para empezar de verdad pero yo lo almaceno aqui-->
+
+<div class="text-layout">
+  
+  <h4>Prueba de Pipes</h4>
+  <h1>{{ nombre | titlecase }}</h1>
+  <hr>
+
+  <h4> Botón de Prueba de PrimeNg </h4>
+  <button
+  class="p-button-help" 
+    pButton label="Cambiar Nombre"
+    icon="pi pi-check"
+    iconPos="right"
+    (click)="mostrarNombre()">
+  </button>
+  <hr>
+
+  <h4>Carta de Prueba de PrimeNg</h4>
+  <p-card [header]="nombre | titlecase"
+          subheader="Esto es un Subheader">
+    Soy una Carta siuu
+  </p-card>
+  
+  <!-- otra alternativa pero aja mejor con la directiva creo <p-button label="Cambiar Nombre" ></p-button> -->
+</div>
